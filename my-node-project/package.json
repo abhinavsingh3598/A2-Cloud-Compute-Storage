@@ -1,0 +1,21 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "A2 Assignment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start-app": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.7.7",
+    "aws-sdk": "^2.1388.0",
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "grpc": "^1.24.11"
+  }
+}
