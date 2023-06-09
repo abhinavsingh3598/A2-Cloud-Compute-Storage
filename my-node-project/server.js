@@ -13,9 +13,9 @@ const computeAndStorageProto = grpc.loadPackageDefinition(packageDefinition).com
 
 // Configure the AWS SDK
 AWS.config.update({
-    accessKeyId: 'ASIAQTFKHOFC32M2RYKW',
-    secretAccessKey: 'wKtrw6TixHyLXa9UBYFpK3A+uBnQeoG64VmU6vcU',
-    sessionToken: 'FwoGZXIvYXdzEEcaDE/6AK5JQBGg578sXSK+Abar2+48P2ORq47JE7/ut/ENSeZUgCC8m+IBEG7Qex+l7Vv7MzxHYYcCxyDA1m8VK/gMK/OKJbtM0yQ80lyLt2BAUYAU7ocF+yaz8nuEbCkOHLYfFkMjxeBw5Q3QEnqi+EQkNRYxD3TrBmpiJOBHot51iXoordDYgXceOIsgfHFr9fT0e0Tt5lWs/5fM0HsxzEWVv5NJwN0rIxVBwgRgZocsN4JSCQffAZFGbp1bo9ibcFXlr8UCT1tmPv8iZ/go7pCJpAYyLZnQzio7X5p/VC10FQzI1qfS8n4eo4IYXiRk8UuK+G4EPnvaTF7xNW87bgqs5w==',
+    accessKeyId: 'ASIAQTFKHOFC34MNZC4W',
+    secretAccessKey: 'zzIqmPdFUU/U+1umcSAyku0/TaKpzML2UiPCsj83',
+    sessionToken: 'FwoGZXIvYXdzEFYaDFub6y/eN7LaEgDTRiK+AZRFVoWFSbBNvtA60YKsDKc8MmtoAuqI0mhtvKGNY4L20ZBSCuCHmtQO6vzj8W9E4gW2dHkF4VzBHi/A5048LA5G20PVMv2JvbMgH/RGEx9aef9m/HRirzbxXy1LbVfbbUOzX7GWbzk7r6jRClOKYAZH1WInXo5JUoL6fCf0tqn5EyNbJuqLtqn8P4Or7vn6ZuGOKUI7Ii1EY23+1rqkKUHZExXKthPtFJ9uXRjbAiD5MlWSyKzv/1QuiWOqfrIo+LKMpAYyLVouUjFjYd/bxW0vtKJJU3liONUeurH4T382J2Z2IJPUUuL1qTBwIGrNuq5poA==',
     region: 'us-east-1',
   });
 const s3 = new AWS.S3({ apiVersion: '2006-03-01' });
