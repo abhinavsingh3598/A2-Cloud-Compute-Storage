@@ -103,7 +103,7 @@ server.addService(computeAndStorageProto.EC2Operations.service, {
   DeleteFile: deleteFile,
 });
 
-server.bindAsync('0.0.0.0:50051', grpc.ServerCredentials.createInsecure(), (err, port) => {
+server.bindAsync('0.0.0.0:8080', grpc.ServerCredentials.createInsecure(), (err, port) => {
   if (err) {
     console.error(err);
     return;
