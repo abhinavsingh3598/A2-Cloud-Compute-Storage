@@ -1,4 +1,4 @@
-const grpc = require('grpc');
+const grpc = require('@grpc/grpc-js');
 const protoLoader = require('@grpc/proto-loader');
 const AWS = require('aws-sdk');
 
@@ -103,6 +103,12 @@ server.addService(computeAndStorageProto.EC2Operations.service, {
   DeleteFile: deleteFile,
 });
 
-server.bind('0.0.0.0:50051', grpc.ServerCredentials.createInsecure());
-console.log('Server running at http://0.0.0.0:50051');
-server.start();
+server.bindAsync('0.0.0.0:50051', grpc.ServerCredentials.createInsecure(), (err, port) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(`Server running at http://0.0.0.0:${port}`);
+  server.start();
+});
+
